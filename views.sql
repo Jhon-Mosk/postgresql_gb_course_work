@@ -1,4 +1,6 @@
 -- 7. Создать два представления, в основе которых лежат сложные запросы.;
+--
+--топ-10 крупнейших покупок пользователей за 10 месяцев
 CREATE VIEW top_10_largest_user_purchases_10_months AS
 SELECT
     DISTINCT first_name,
@@ -17,6 +19,7 @@ ORDER BY
 LIMIT
     10;
 
+--топ-10 наиболее покупаемых товаров
 CREATE VIEW top_10_most_purchases_goods AS
 SELECT
     DISTINCT name,

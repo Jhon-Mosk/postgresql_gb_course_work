@@ -1,3 +1,4 @@
+--триггер срабатывает при обновлении статуса заказа, меняет дату изменения статуса на текущую
 CREATE
 OR REPLACE FUNCTION update_status_date_trigger() RETURNS TRIGGER AS $ update_status_date_trigger $ BEGIN NEW.status_date = current_timestamp;
 

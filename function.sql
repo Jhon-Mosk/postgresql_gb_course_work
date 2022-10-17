@@ -1,3 +1,4 @@
+--выводит общее количество товара на складе и в магазинах по индентификатору товара
 CREATE FUNCTION total_quantity_goods(search_goods_id INT) RETURNS INT AS $ $
 SELECT
     (
